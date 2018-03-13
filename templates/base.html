@@ -9,13 +9,21 @@
     <title>GUGU.COM</title>
 
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
 </head>
 <body>
-    <p>hello</p>
+    <div id="customNav">
+        <div class="container">
+            <div class="logo">GUGU</div>
+            <div class="navMenu"><a href="#">관심사 설정</a></div>
+            <div class="navMenu"><a href="#">읽기</a></div>
+            <div class="navMenu"><a href="#">쓰기</a></div>
+        </div>
+    </div>
     {% block content %}
     {% endblock %}
 
-    <link rel="stylesheet" href="{% static 'bootstrap/jquery-3.3.1.js' %}">
-    <link rel="stylesheet" href="{% static 'bootstrap/js/bootstrap.js' %}">
+    <script src="{% static 'jquery-3.3.1.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
 </body>
 </html>

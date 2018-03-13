@@ -1,0 +1,14 @@
+#customNav {
+  height: 70px;
+  background-color: #afd9ee;
+  color: black;
+  padding-top: 30px; }
+  #customNav .container .logo {
+    float: left;
+    margin-right: 100px; }
+  #customNav .container .navMenu {
+    float: left;
+    margin-right: 20px;
+    text-decoration: none; }
+
+/*# sourceMappingURL=common.css.map */
