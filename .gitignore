@@ -1,7 +1,7 @@
 ### CUSTOM ###
 *.idea/
 .env
-.config_secret
+.config_secret/
 
 # Created by https://www.gitignore.io/api/macos,django,python,pycharm
 
