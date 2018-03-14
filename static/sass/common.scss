@@ -1,22 +1,39 @@
-#customNav {
-  position: fixed;
-  top: 0;
-  height: 70px;
-  background-color: #afd9ee;
-  color: black;
-  padding-top: 30px;
+body {
+  background-color: #fcefe8;
+}
+a {
+  color: inherit;
+}
 
-  .container {
-    .logo {
+.container {
+  width: 1024px;
+}
+
+.container {
+  height: 100px;
+  #customNav {
+    div.logo {
       float: left;
-      margin-right: 100px;
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 100px;
     }
-    .navMenu {
-      float: left;
-      margin-right: 20px;
-      text-decoration: none;
+    div.navMenu {
+      float: right;
+      margin-left: 20px;
+      font-size: 20px;
+      line-height: 100px;
+    }
+    div.register {
+      width: 150px;
+      display: block;
+      color: #ffffff;
+      background-color: red;
+      margin-top: 20px;
+      line-height: 60px;
+      height: 60px;
+      border-radius: 10px;
+      text-align: center;
     }
   }
 }
-
-

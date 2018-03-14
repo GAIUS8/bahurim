@@ -10,14 +10,17 @@
 
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <div id="customNav">
-        <div class="container">
-            <div class="logo">GUGU</div>
-            <div class="navMenu"><a href="#">관심사 설정</a></div>
-            <div class="navMenu"><a href="#">읽기</a></div>
-            <div class="navMenu"><a href="#">쓰기</a></div>
+    <div class="container">
+        <div id="customNav">
+            <div class="logo">SHOESHOE</div>
+            <div class="navMenu register"><a href="#">REGISTER</a></div>
+            <div class="navMenu"><a href="#">LOG IN</a></div>
+            <div class="navMenu"><a href="#">장바구니</a></div>
         </div>
     </div>
     {% block content %}
