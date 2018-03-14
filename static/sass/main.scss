@@ -36,12 +36,48 @@ div.product-list {
   position: relative;
   top: -30px;
   .container {
+    div.col-md-4 > a > div.product-image > img:hover {
+        opacity: 0.6;
+    }
+
     .row > .col-md-4 {
       background-color: white;
       height: 400px;
       width: 331px;
       margin: 10px 5px;
       box-shadow: 5px 5px 10px rgba(128,128,128,0.3);
+      padding: 0;
+
+      .product-image {
+        overflow: hidden;
+        width: 331px;
+        height: 280px;
+        img {
+          display: block;
+          height: inherit;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          transition: opacity 1s;
+          -webkit-transition: opacity 1s; /* Safari */
+        }
+      }
+
+      .product-description {
+        padding: 0 10px;
+
+        .product-name {
+          margin-bottom: 0;
+          font-weight: bold;
+          font-size: 15px;
+        }
+        .product-detail {
+          color: red;
+        }
+        .product-price {
+          font-weight: bold;
+          text-align: right;
+        }
+      }
     }
   }
 }
