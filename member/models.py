@@ -22,6 +22,8 @@ class MyUserManager(BaseUserManager):
                              password=password,
                              )
         u.is_admin = True
+        u.is_staff = True
+        u.is_superuser = True
         u.save(using=self._db)
         return u
 
@@ -42,5 +44,14 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
     postal_code = models.CharField(max_length=100, blank=True, null=True)
     address = models.CharField(max_length=300, blank=True, null=True)
 
+    is_staff = models.BooleanField(
+        default=False,
+        help_text='Designates whether the user can log into this admin site.',
+    )
+    
+    date_joined = models.DateTimeField(auto_now=True)
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
+    
+    object = MyUserManager()
